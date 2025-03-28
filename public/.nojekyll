@@ -1,0 +1,4 @@
+
+# This file is used to disable Jekyll processing in GitHub Pages
+# It ensures that GitHub Pages doesn't process the site with Jekyll,
+# which can cause issues with files starting with underscore.
