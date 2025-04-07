@@ -7,24 +7,307 @@
     <title>Rittam Dutta | Portfolio</title>
     <meta name="description" content="Rittam Dutta - Software Developer & Tech Enthusiast" />
     <meta name="author" content="Rittam Dutta" />
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <meta property="og:title" content="Rittam Dutta | Portfolio" />
-    <meta property="og:description" content="Software Developer & Tech Enthusiast" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   </head>
-
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <nav id="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <a href="#home">Rittam Dutta</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hi, I'm <span class="highlight">Rittam Dutta</span></h1>
+            <h2>Software Developer & Tech Enthusiast</h2>
+            <p>I build exceptional digital experiences with clean code and innovative solutions.</p>
+            <div class="cta-buttons">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <div class="image-container">
+              <img src="placeholder.svg" alt="Rittam Dutta">
+            </div>
+          </div>
+          <div class="about-text">
+            <p>Hello! I'm Rittam, a passionate software developer with a keen interest in building digital solutions that solve real-world problems.</p>
+            <p>With a background in computer science and several years of experience in the tech industry, I've worked on a variety of projects ranging from web applications to mobile solutions.</p>
+            <p>My approach combines technical expertise with creative problem-solving to deliver clean, efficient, and user-friendly applications.</p>
+            <div class="about-details">
+              <div class="detail-item">
+                <span class="detail-title">Name:</span>
+                <span class="detail-info">Rittam Dutta</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-title">Email:</span>
+                <span class="detail-info">contact@example.com</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-title">Location:</span>
+                <span class="detail-info">New York, USA</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-title">Availability:</span>
+                <span class="detail-info">Open to opportunities</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/" target="_blank" class="social-link">GitHub</a>
+              <a href="https://linkedin.com/in/ridt/" target="_blank" class="social-link">LinkedIn</a>
+              <a href="https://twitter.com/" target="_blank" class="social-link">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills section-padding">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-content">
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-name">HTML5</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">CSS3</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">React</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Backend Development</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-name">Node.js</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">SQL</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">MongoDB</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools & Technologies</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-name">Git</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">Docker</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">AWS</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">CI/CD</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section-padding">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="placeholder.svg" alt="Project 1">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">E-commerce Platform</h3>
+              <p class="project-description">A full-featured online store with product catalog, shopping cart, and payment integration.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="placeholder.svg" alt="Project 2">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Task Management App</h3>
+              <p class="project-description">A productivity tool for organizing tasks, setting deadlines, and tracking progress.</p>
+              <div class="project-tech">
+                <span>JavaScript</span>
+                <span>Express</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="placeholder.svg" alt="Project 3">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Weather Dashboard</h3>
+              <p class="project-description">Real-time weather information with forecast data and location search.</p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>API Integration</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>Email</h3>
+              <p>contact@example.com</p>
+            </div>
+            <div class="contact-item">
+              <h3>Location</h3>
+              <p>New York, USA</p>
+            </div>
+            <div class="contact-item">
+              <h3>Follow Me</h3>
+              <div class="social-links">
+                <a href="https://github.com/" target="_blank" class="social-link">GitHub</a>
+                <a href="https://linkedin.com/in/ridt/" target="_blank" class="social-link">LinkedIn</a>
+                <a href="https://twitter.com/" target="_blank" class="social-link">Twitter</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Rittam Dutta. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
