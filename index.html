@@ -11,6 +11,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+    <!-- EmailJS SDK -->
+    <!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // Wait until EmailJS is loaded
+    emailjs.init("ygOjwAeKg4k-9iHJp"); // ✅ Replace with your actual public key
+
+    // Attach form submission handler
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_5qgiabo", "template_kbyd35c", this)
+        .then(() => {
+          alert("✅ Message sent successfully!");
+          this.reset();
+        })
+        .catch((error) => {
+          alert("❌ Failed to send message.\n" + JSON.stringify(error));
+        });
+    });
+  });
+</script>
+
+
+
+
   </head>
   <body>
     <nav id="navbar">
