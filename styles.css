@@ -353,12 +353,16 @@ p {
 .project-image {
   height: 200px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* optional, to fill empty space if image doesn't fill area */
 }
 
 .project-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* this fits the entire image */
   transition: var(--transition);
 }
 
