@@ -13,7 +13,33 @@
   --container-padding: 0 1.5rem;
 }
 
-/* Base styles */
+:root.dark-mode {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #aaa;
+  --accent-color: #66ffcc;
+  --border-color: #333;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Toggle Button Styles (Optional styling) */
+#darkModeToggle {
+  background: none;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+#darkModeToggle:hover {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
